@@ -12,8 +12,8 @@ app.use(cors());
 
 // Database connection
 mongoose.
-connect('mongodb+srv://hotelapiusername:i8t3VTtCxpqv55IT@hotelapi.ffzkw16.mongodb.net/')
-// connect('mongodb+srv://rizwanabid2:hectagon%406@cluster0.be9nrgz.mongodb.net/')
+// connect('mongodb+srv://hotelapiusername:i8t3VTtCxpqv55IT@hotelapi.ffzkw16.mongodb.net/')
+connect('mongodb+srv://rizwanabid2:hectagon%406@cluster0.be9nrgz.mongodb.net/')
 .then(() => {
     console.log("connected");
     app.listen(port, () => {
@@ -27,7 +27,7 @@ connect('mongodb+srv://hotelapiusername:i8t3VTtCxpqv55IT@hotelapi.ffzkw16.mongod
 
 // Routes strats from here
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('my database connected!')
 });
 
 const adminRouter = require('./routes/adminRoute');
