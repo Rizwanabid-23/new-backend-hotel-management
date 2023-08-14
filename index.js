@@ -11,8 +11,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors());
 
 // Database connection
-mongoose.
 // connect('mongodb+srv://hotelapiusername:i8t3VTtCxpqv55IT@hotelapi.ffzkw16.mongodb.net/')
+mongoose.
 connect('mongodb+srv://rizwanabid2:hectagon%406@cluster0.be9nrgz.mongodb.net/')
 .then(() => {
     console.log("connected");
